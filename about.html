@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Car Info — an informative automotive resource for car buyers, owners, and enthusiasts." />
+  <title>About | Car Info</title>
+  <link rel="preload" href="css/variables.css" as="style" />
+  <link rel="preload" href="css/reset.css" as="style" />
+  <link rel="preload" href="css/layout.css" as="style" />
+  <link rel="preload" href="css/main.css" as="style" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">Car<span style="color:var(--color-text)">Info</span></a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" type="button">
+        <span class="sr-only">Open navigation menu</span>
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-list" id="main-nav" hidden>
+        <ul class="flex flex-center" style="gap: var(--space-6);">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content" id="main-content">
+    <div class="container">
+
+      <section class="section">
+        <h1 class="section-title mb-8">About Car Info</h1>
+
+        <div class="grid" style="grid-template-columns: 1fr;">
+          <div>
+            <h2 class="text-2xl font-semibold mb-4">Our mission</h2>
+            <p class="mb-6 text-lg">
+              Car Info is an informative website dedicated to helping people make
+              confident, well-informed decisions about cars. Whether you're buying
+              your first vehicle, maintaining your current one, or curious about
+              electric vehicles and emerging automotive technology, we've got you covered.
+            </p>
+            <p class="mb-6">
+              We believe reliable automotive information should be accessible to
+              everyone — no paywalls, no subscriptions, just clear and honest
+              content you can trust.
+            </p>
+          </div>
+
+          <aside class="card p-6">
+            <h3 class="text-xl font-semibold mb-4">Quick facts</h3>
+            <ul class="flex flex-col gap-3" style="flex-direction: column; gap: var(--space-3);">
+              <li><span class="font-semibold">Topic:</span> Automotive information</li>
+              <li><span class="font-semibold">Audience:</span> Car buyers, owners, enthusiasts</li>
+              <li><span class="font-semibold">Access:</span> Completely free</li>
+              <li><span class="font-semibold">Built with:</span> HTML5, CSS3, vanilla JavaScript</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title mb-8">What we cover</h2>
+
+        <div class="grid">
+          <div class="feature">
+            <div class="feature-icon" aria-hidden="true">📖</div>
+            <div class="feature-content">
+              <h3>Buying guides</h3>
+              <p>New vs. used, financing, trade-ins, and what to look for on a test drive.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon" aria-hidden="true">🔧</div>
+            <div class="feature-content">
+              <h3>Maintenance</h3>
+              <p>Oil changes, tire care, brake service, and scheduled maintenance intervals.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <div class="feature-content">
+              <h3>Electric vehicles</h3>
+              <p>EV ranges, charging options, incentives, and ownership considerations.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon" aria-hidden="true">🛡️</div>
+            <div class="feature-content">
+              <h3>Safety &amp; tech</h3>
+              <p>Driver-assist features, crash ratings, and in-car technology.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">Car<span style="color:var(--color-text-secondary)">Info</span></a>
+          <p class="footer-text mt-4">
+            An informative automotive resource. Learn, explore, and drive smarter.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Site</h4>
+          <ul class="footer-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="nav-link footer-link">About</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Topics</h4>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Buying guides</a></li>
+            <li><a href="#" class="footer-link">Maintenance</a></li>
+            <li><a href="#" class="footer-link">Electric vehicles</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Car Info. All rights reserved.</p>
+        <p>Built with semantic HTML5 and modern CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

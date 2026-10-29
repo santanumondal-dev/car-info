@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------
+   CSS Custom Properties (Design Tokens)
+   car-info — automotive informative site
+   ------------------------------------------------------------ */
+
+:root {
+  /* ── Color palette (automotive theme) ── */
+  --color-background: #ffffff;
+  --color-surface: #f4f5f7;
+  --color-text: #1a1b1e;
+  --color-text-secondary: #5b5f66;
+  --color-text-muted: #8a9098;
+  --color-border: #d1d5da;
+  --color-focus: #0b6efd;
+
+  /* Automotive accent colors */
+  --color-accent: #0b6efd;      /* primary blue */
+  --color-accent-hover: #085cc4;
+  --color-accent-light: #e8f0ff;
+
+  --color-success: #2e8540;
+  --color-warning: #c8860d;
+  --color-danger: #c43939;
+
+  /* ── Typography ── */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas,
+    "Liberation Mono", monospace;
+
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;      /* 24px */
+  --font-size-3xl: 2rem;        /* 32px */
+  --font-size-4xl: 2.5rem;      /* 40px */
+  --font-size-5xl: 3.5rem;      /* 56px */
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ── Spacing scale ── */
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+
+  /* ── Borders & radius ── */
+  --border-width: 1px;
+  --border-style: solid;
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-full: 9999px;
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* ── Breakpoints (mobile-first) ── */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* ── Container widths ── */
+  --container-max: 1200px;
+  --container-padding: 1rem;
+
+  /* ── Z-index scale ── */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-tooltip: 400;
+
+  /* ── Dark mode override (applied via prefers-color-scheme or class) ── */
+  @media (prefers-color-scheme: dark) {
+    --color-background: #0f1115;
+    --color-surface: #1a1c21;
+    --color-text: #e7e9ee;
+    --color-text-secondary: #a9b0ba;
+    --color-text-muted: #6e747d;
+    --color-border: #2c2f36;
+    --color-accent-light: #1a2a4d;
+  }
+}
+
+[data-theme="dark"] {
+  --color-background: #0f1115;
+  --color-surface: #1a1c21;
+  --color-text: #e7e9ee;
+  --color-text-secondary: #a9b0ba;
+  --color-text-muted: #6e747d;
+  --color-border: #2c2f36;
+  --color-accent-light: #1a2a4d;
+}

@@ -1,0 +1,93 @@
+/* ------------------------------------------------------------
+   Modern CSS Reset
+   car-info — automotive informative site
+   ------------------------------------------------------------ */
+
+/* Box-sizing: border-box on all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl,
+figure, blockquote, pre,
+hr, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings inherit font-size and weight for consistency */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Lists: remove bullets and numbering */
+ul, ol {
+  list-style: none;
+}
+
+/* Links: inherit color, remove underline by default (components re-style) */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Images and media: max-width 100%, display block to avoid gaps */
+img,
+svg,
+video,
+audio,
+canvas,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forms: inherit font, remove default appearance */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  resize: vertical;
+}
+
+/* Ensure form elements are vertically aligned */
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
+/* Fieldset and legend */
+fieldset {
+  border: 0;
+  min-width: 0;
+}
+
+/* Hidden utility — visually hidden but accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
